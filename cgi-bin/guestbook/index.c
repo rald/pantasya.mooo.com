@@ -227,7 +227,10 @@ int cgiMain() {
     	"border: 1px solid navy;" 
     	"border-radius: 8px;" 
     	"box-shadow: 2px 2px 4px #505050 inset;"
-			"text-align: justify;}"
+			"text-align: justify;"
+			"white-space: pre-wrap;"
+			"word-wrap: break-word;}"
+			
     "section.post p.indent { text-indent: 50px;}"
     ".title {}"
     ".datetime { float: right;}"
