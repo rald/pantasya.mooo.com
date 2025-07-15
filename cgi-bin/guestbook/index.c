@@ -64,30 +64,30 @@ void showForm() {
 
 	fprintf(cgiOut,"<section class='post'>");
 
-	fprintf(cgiOut,"<div class='title'><b>Sign Guestbook</b></div>");
+	fprintf(cgiOut,"<div class='title'>Sign Guestbook</div>");
 	fprintf(cgiOut,"<hr>");
 	
 	fprintf(cgiOut,"<form action='' method='post'>");
-	fprintf(cgiOut,"<font face='monospace'>");	
 	fprintf(cgiOut,"<table width='100%%'>");
 	fprintf(cgiOut,"<tr>");
-	fprintf(cgiOut,"<td>Name</td>"); 
-	fprintf(cgiOut,"<td><input style='width:100%%;font-size:12pt;' name='name' type='text' size='16' maxlength='32' required></td>");
+	fprintf(cgiOut,"<td><div class='title'>Name</div></td>");
+	fprintf(cgiOut,"<td><input style='width:100%%;' name='name' type='text' size='16' maxlength='32' required></td>");
 	fprintf(cgiOut,"</tr>");
 	fprintf(cgiOut,"<tr>");
-	fprintf(cgiOut,"<td>Message</td>");
-	fprintf(cgiOut,"<td><textarea style='width:100%%;font-size:12pt;resize:none;' name='message' cols='16' rows='8' maxlength='1024' required></textarea></td>");
+	fprintf(cgiOut,"<td><div class='title'>Message</div></td>");
+	fprintf(cgiOut,"<td><textarea style='width:100%%;resize:none;' name='message' cols='16' rows='8' maxlength='1024' required></textarea></td>");
 	fprintf(cgiOut,"</tr>");
 	fprintf(cgiOut,"<tr>");
 	fprintf(cgiOut,
-		"<td align='right' colspan='2'><input style='font-size:12pt;' type='reset' value='Clear'>&nbsp;"
-		"<input style='font-size:12pt;' name='sign' type='submit' value='Sign'></td>"
+		"<td align='right' colspan='2'>"
+		"<input class='button' type='reset' value='Clear'>&nbsp;"
+		"<input class='button' name='sign' type='submit' value='Sign'>"
+		"</td>"
 	);
 	fprintf(cgiOut,"</tr>");
 	fprintf(cgiOut,"</table>");
-	fprintf(cgiOut,"</font>");
 	fprintf(cgiOut,"</form>");
-	
+
 	fprintf(cgiOut,"</section>");
 }
 
@@ -95,8 +95,8 @@ int callback(void *NotUsed, int argc, char **argv, char **azColName) {
 	NotUsed = 0;
 
 	fprintf(cgiOut,"<section class='post'>");
-	fprintf(cgiOut,"<div class='datetime'>%s</div>", argv[2] ? escapeHtml(argv[2]) : "NULL"); 
-	fprintf(cgiOut,"<div class='name'>%s</div>", argv[0] ? escapeHtml(argv[0]) : "NULL");
+	fprintf(cgiOut,"<div class='datetime'>%s</div>", argv[2] ? escapeHtml(argv[2]) : "NULL"); 	fprintf(cgiOut,"<div class='name'>%s</div>", argv[0] ? escapeHtml(argv[0]) : "NULL");
+	fprintf(cgiOut,"<div class='clear'></div>");
 	fprintf(cgiOut,"<hr>");
 	fprintf(cgiOut,"<p>%s</p>", argv[1] ? escapeHtml(argv[1]) : "NULL"); 	
 	fprintf(cgiOut,"</section>");
