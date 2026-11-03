@@ -6,26 +6,37 @@
     <title>POCS - Attendance Record</title>
  
     <link rel="icon" type="image/png" href="favicon.png" />
-
+ 
+    <style>
+      * {
+        font-family: monospace;
+        box-sizing: border-box;
+      }
+      
+      .container {
+        max-width: 480px;  
+      }
+      
+    </style>
   </head>
 
   <body>
 
 
 
-    <font face="monospace">
+    <div class="container">
 
 			<table border>
 				<caption><h3 align='center'>Attendance Record</h3></caption>
 			
 				<tr>
-					<th rowspan='2' bgcolor='navy'><font color='white'>ID</font></th>
-					<th rowspan='2' bgcolor='navy'><font color='white'>Name</font></th>
-					<th rowspan='2' bgcolor='navy'><font color='white'>Subject</font></th>
-					<td colspan='31' align='center' bgcolor='navy'><font color='white'>FEBRUARY</font></td>
+					<th colspan='34' align='center' bgcolor='navy'><font color='white'>MARCH 2023</font></th>
 				</tr>
 	
 				<tr align="center">
+					<th bgcolor='navy'><font color='white'>ID</font></th>
+					<th bgcolor='navy'><font color='white'>Name</font></th>
+					<th bgcolor='navy'><font color='white'>Subject</font></th>
 					<td>&nbsp;1<br>W</td>
 					<td>&nbsp;2<br>H</td>
 					<td>&nbsp;3<br>F</td>
@@ -54,6 +65,9 @@
 					<td>26<br>D</td>
 					<td>27<br>M</td>
 					<td>28<br>T</td>
+					<td>29<br>W</td>
+					<td>30<br>H</td>
+					<td>31<br>F</td>
 				</tr>
 
 				<tr bgcolor='#AAA'>
@@ -66,16 +80,7 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="lightgreen"></td>
+					<td bgcolor="red"></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -83,93 +88,56 @@
 					<td></td>
 					<td></td>
 					<td bgcolor="red"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="lightgreen"></td>
+		 			<td></td>
+					<th rowspan="3" colspan="16" bgcolor="red"><font color="white">DROP</font></th>
 			  </tr>
 
 				<tr bgcolor='#AAA'>
 					<th><font color='white'>JAVA</font></th>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="lightgreen"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="red"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-			  </tr>
-	
-	
-				<tr bgcolor='#AAA'>
-					<th><font color='white'>WEBTECH</font></th>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="red"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td bgcolor="blue"></td>
 					<td bgcolor="yellow"></td>
 					<td></td>
 					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="red"></td>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+		 			<td></td>
+			  </tr>
+
+				<tr bgcolor='#AAA'>
+					<th><font color='white'>WEBTECH</font></th>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+		 			<td></td>
+		 			<td bgcolor="red"></td>
 			  </tr>
 	
 				<tr bgcolor='#CCC'>
 				  <th rowspan="3"><font color='white'>I2206</font></th>
 					<th rowspan="3" align="center"><font color='white'>Itami</font></th>
-					<th><font color='white'>CPP</font></th>
+					<th><font color='white'>C++</font></th>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td bgcolor="lightgreen"></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -183,7 +151,17 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td bgcolor="lightgreen"></td>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -195,14 +173,14 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td bgcolor="blue"></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
+					<td bgcolor="yellow"></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -214,6 +192,9 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -223,21 +204,14 @@
 
 				<tr bgcolor='#CCC'>
 					<th><font color='white'>WEBTECH</font></th>
+					<td bgcolor="red"></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td bgcolor="lightgreen"></td>
-					<td></td>
+					<td bgcolor="yellow"></td>
+					<td bgcolor="yellow"></td>
+					<td bgcolor="yellow"></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -249,8 +223,18 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td bgcolor="red"></td>
 					<td bgcolor="lightgreen"></td>
-					<td bgcolor="blue"></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="green"></td>
+					<td bgcolor="green"></td>
+					<td bgcolor="green"></td>
+					<td></td>
+					<td></td>
 			  </tr>
 	
 				<tr bgcolor='#AAA'>
@@ -261,6 +245,98 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<th colspan="15" bgcolor="red"><font color="white">DROP</font></th>
+			  </tr>
+
+				<tr bgcolor='#CCC'>
+				  <th><font color='white'>B2301</font></th>
+					<th align="center"><font color='white'>Pattu</font></th>
+					<th><font color='white'>Python</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<th bgcolor="red" colspan="28"><font color="white">DROP</font></th>
+			  </tr>
+
+				<tr bgcolor='#AAA'>
+				  <th><font color='white'>C2300</font></th>
+					<th align="center"><font color='white'>Zeyn</font></th>
+					<th><font color='white'>WebTech</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="red"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<th colspan="15" bgcolor="red"><font color="white">DROP</font></th>
+			  </tr>
+			
+				<tr bgcolor='#CCC'>
+				  <th rowspan="6"><font color='white'>I2209</font></th>
+					<th rowspan="6" align="center"><font color='white'>Ferd</font></th>
+					<th><font color='white'>C</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="yellow"></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="yellow"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  </tr>
+			
+				<tr bgcolor='#CCC'>
+					<th><font color='white'>VB</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
@@ -282,14 +358,49 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td bgcolor="red"></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
 					<td></td>
 					<td></td>
 			  </tr>
-			
+
 				<tr bgcolor='#CCC'>
-				  <th><font color='white'>B2301</font></th>
-					<th align="center"><font color='white'>Pattu</font></th>
+					<th><font color='white'>WebTech</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  </tr>
+
+				<tr bgcolor='#CCC'>
 					<th><font color='white'>Python</font></th>
 					<td></td>
 					<td></td>
@@ -311,16 +422,92 @@
 					<td></td>
 					<td></td>
 					<td></td>
+					<td bgcolor="lightgreen"></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td bgcolor="red"></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
 					<td></td>
 			  </tr>
-						</table>
+
+
+				<tr bgcolor='#CCC'>
+					<th><font color='white'>Linux</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="blue"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			  </tr>
+
+				<tr bgcolor='#CCC'>
+					<th><font color='white'>Java</font></th>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td bgcolor="lightgreen"></td>
+			  </tr>
+
+				
+			</table>
 	    
 	    <br>
 	    
@@ -345,13 +532,17 @@
 	    		<td bgcolor="red"></td>
 					<td>absent</td>
 	    	</tr>
+	     	<tr>
+	    		<td bgcolor="green"></td>
+					<td>excuse</td>
+	    	</tr>
 	    	<tr>
 	    		<td bgcolor="blue"></td>
 					<td>teacher absent</td>
 	    	</tr>
 	    </table>	
 	    
-    </font>
+    </div>
 
   </body>
 
